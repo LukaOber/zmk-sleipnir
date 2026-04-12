@@ -1,19 +1,25 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
 / {
-	chosen {
+    chosen {
         zmk,kscan = &kscan0;
-        zmk,split = &split0;
+        zmk,matrix_transform = &default_transform;
     };
 
-    split0: split {
-        compatible = "zmk,split";
-        col-offset = <8>;
-        role = "peripheral";
+    default_transform: matrix_transform {
+        compatible = "zmk,matrix-transform";
+        columns = <8>;
+        rows = <2>;
+        row-offset = <1>; // THIS IS KEY: it pushes these pins to the second row of your keymap
+        map = <
+            RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) RC(0,6) RC(0,7)
+            RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5) RC(1,6) RC(1,7)
+        >;
     };
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
-
         input-gpios
             = <&xiao_d  6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&xiao_d  5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
@@ -25,5 +31,4 @@
             , <&xiao_d  7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
     };
-
 };

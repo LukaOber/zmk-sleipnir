@@ -1,0 +1,17 @@
+if SHIELD_SLEIPNIR_LEFT
+    config ZMK_KEYBOARD_NAME
+        default "Sleipnir"
+
+    config CONFIG_ZMK_SPLIT_ROLE_CENTRAL
+        bool
+        default y
+endif
+
+if SHIELD_SLEIPNIR_RIGHT
+    config ZMK_KEYBOARD_NAME
+        default "Sleipnir"
+
+    config CONFIG_ZMK_SPLIT_ROLE_CENTRAL
+        bool
+        default n
+endif
