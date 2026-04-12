@@ -1,0 +1,5 @@
+config SHIELD_SLEIPNIR_LEFT
+    def_bool $(shields_list_contains,sleipnir_left)
+
+config SHIELD_SLEIPNIR_RIGHT
+    def_bool $(shields_list_contains,sleipnir_right)
