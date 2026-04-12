@@ -1,12 +1,11 @@
 if SHIELD_SLEIPNIR_LEFT
 config ZMK_KEYBOARD_NAME
-    default "Sleipnir"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+    default "SleipnirLeft"
 endif
 
 if SHIELD_SLEIPNIR_RIGHT
+config ZMK_KEYBOARD_NAME
+    default "SleipnirRight"
 config ZMK_SPLIT_ROLE_CENTRAL
     default n
 endif
