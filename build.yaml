@@ -1,10 +1,6 @@
 include:
   - board: seeeduino_xiao_ble
     shield: sleipnir_left
-    cmake-args: >
-      -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
 
   - board: seeeduino_xiao_ble
     shield: sleipnir_right
-    cmake-args: >
-      -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
