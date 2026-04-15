@@ -6,3 +6,7 @@ include:
   - board: seeeduino_xiao_ble
     snippet: nrf52840-nosd
     shield: sleipnir_right
+
+  - board: seeeduino_xiao_ble
+    snippet: nrf52840-nosd
+    shield: settings_reset
