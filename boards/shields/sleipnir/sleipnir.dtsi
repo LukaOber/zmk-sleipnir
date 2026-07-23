@@ -37,7 +37,7 @@
         combo_j_##SUFFIX { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_N KEY_A KEY_T>; bindings = <&kp J>; }; \
         combo_v_##SUFFIX { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_H KEY_E KEY_T>; bindings = <&kp V>; }; \
         combo_z_##SUFFIX { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_O KEY_N KEY_A KEY_T>; bindings = <&kp Z>; }; \
-        combo_under_##SUFFIX   { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_O KEY_H KEY_E KEY_T>; bindings = <&kp UNDER>; }; \
+        combo_under_##SUFFIX   { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_SPACE KEY_T>; bindings = <&kp UNDER>; }; \
         combo_grave_##SUFFIX   { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_H KEY_A KEY_T>; bindings = <&kp GRAVE>; }; \
         combo_qmark_##SUFFIX   { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_N KEY_E KEY_T>; bindings = <&kp QMARK>; }; \
         combo_squote_##SUFFIX  { layers = <LAYER_ID_SYM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_O KEY_N>; bindings = <&kp SQT>; }; \
