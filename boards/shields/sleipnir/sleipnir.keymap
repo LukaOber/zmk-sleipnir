@@ -70,12 +70,12 @@
                 &kp SPACE        &kp MINUS
                 &kp N1           &kp N3
                 &kp N2           &kp N4
-                &kp BSPC         &mo LAYER_ID_NUM
+                &kp BSPC         &trans
 
                 &kp SPACE        &kp MINUS
                 &kp N1           &kp N3
                 &kp N2           &kp N4
-                &kp BSPC         &mo LAYER_ID_NUM
+                &kp BSPC         &trans
             >;
         };
 
@@ -84,23 +84,23 @@
                 &kp SPACE        &kp DEL
                 &kp UP           &kp LEFT
                 &kp DOWN         &kp RIGHT
-                &mo LAYER_ID_NAV &none
+                &trans           &none
 
                 &kp SPACE        &kp DEL
                 &kp UP           &kp LEFT
                 &kp DOWN         &kp RIGHT
-                &mo LAYER_ID_NAV &none
+                &trans           &none
             >;
         };
 
         mouse {
             bindings = <
-                &mo LAYER_ID_MWS &mkp MB3
+                &trans           &mkp MB3
                 &mmv MOVE_UP     &mmv MOVE_LEFT
                 &mmv MOVE_DOWN   &mmv MOVE_RIGHT
                 &mkp MB2         &mkp MB1
 
-                &mo LAYER_ID_MWS &mkp MB3
+                &trans           &mkp MB3
                 &mmv MOVE_UP     &mmv MOVE_LEFT
                 &mmv MOVE_DOWN   &mmv MOVE_RIGHT
                 &mkp MB2         &mkp MB1
