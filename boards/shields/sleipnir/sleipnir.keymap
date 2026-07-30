@@ -59,26 +59,26 @@
                 &layer_kp_qt_long LAYER_ID_MWS SPACE &kp O
                 &kp N                           &kp A
                 &kp H                           &kp E
-                &layer_kp_qt LAYER_ID_NAV BSPC  &layer_kp LAYER_ID_SYM T
+                &layer_kp_qt LAYER_ID_NAV BSPC  &layer_kp LAYER_ID_NUM T
 
                 &layer_kp_qt_long LAYER_ID_MWS SPACE &kp O
                 &kp N                           &kp A
                 &kp H                           &kp E
-                &layer_kp_qt LAYER_ID_NAV BSPC  &layer_kp LAYER_ID_SYM T
+                &layer_kp_qt LAYER_ID_NAV BSPC  &layer_kp LAYER_ID_NUM T
             >;
         };
 
-        symbol {
+        number {
             bindings = <
-                &kp SPACE        &kp SEMI
-                &kp LBRC         &kp LPAR
-                &kp RBRC         &kp RPAR
-                &kp BSPC         &mo LAYER_ID_SYM
+                &kp SPACE        &kp MINUS
+                &kp N1           &kp N3
+                &kp N2           &kp N4
+                &kp BSPC         &mo LAYER_ID_NUM
 
-                &kp SPACE        &kp SEMI
-                &kp LBRC         &kp LPAR
-                &kp RBRC         &kp RPAR
-                &kp BSPC         &mo LAYER_ID_SYM
+                &kp SPACE        &kp MINUS
+                &kp N1         &kp N3
+                &kp N2         &kp N4
+                &kp BSPC         &mo LAYER_ID_NUM
             >;
         };
 
