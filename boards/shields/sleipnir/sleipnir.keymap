@@ -70,12 +70,12 @@
                 &kp SPACE        &kp MINUS
                 &kp N1           &kp N3
                 &kp N2           &kp N4
-                &kp BSPC         &trans
+                &mo LAYER_ID_NAV &trans
 
                 &kp SPACE        &kp MINUS
                 &kp N1           &kp N3
                 &kp N2           &kp N4
-                &kp BSPC         &trans
+                &mo LAYER_ID_NAV &trans
             >;
         };
 
@@ -84,12 +84,12 @@
                 &kp SPACE        &kp DEL
                 &kp UP           &kp LEFT
                 &kp DOWN         &kp RIGHT
-                &trans           &none
+                &trans           &mo LAYER_ID_NUM
 
                 &kp SPACE        &kp DEL
                 &kp UP           &kp LEFT
                 &kp DOWN         &kp RIGHT
-                &trans           &none
+                &trans           &mo LAYER_ID_NUM
             >;
         };
 
