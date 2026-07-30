@@ -8,12 +8,16 @@
 	release-after-ms = <TIMEOUT_STICKY_LEADER_KEY>;
 };
 
+&lt {
+    tapping-term-ms = <TIMEOUT_LAYER_HOLD>;
+    quick-tap-ms = <QUICK_TAP_TIME>;
+    flavor = "balanced";
+};
+
 / {
     combos {
         compatible = "zmk,combos";
-
         MAKE_COMBOS(L, 0, 1, 2, 3, 4, 5, 6, 7);
-
         MAKE_COMBOS(R, 8, 9, 10, 11, 12, 13, 14, 15);
     };
 
@@ -25,27 +29,20 @@
         };
     };
 
-    behaviors {
-        layer_kp_qt: layer_kp_qt {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <TIMEOUT_LAYER_HOLD>;
-            quick-tap-ms = <QUICK_TAP_TIME>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <LAYER_ID_NUM LAYER_ID_NAV>;
+            then-layer = <LAYER_ID_FUN>;
         };
+    };
+
+    behaviors {
         layer_kp_qt_long: layer_kp_qt_long {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <TIMEOUT_LAYER_LONG_HOLD>;
             quick-tap-ms = <QUICK_TAP_TIME>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
-        };
-        layer_kp: layer_kp {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <TIMEOUT_LAYER_HOLD>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
@@ -57,14 +54,14 @@
         base {
             bindings = <
                 &layer_kp_qt_long LAYER_ID_MWS SPACE &kp O
-                &kp N                           &kp A
-                &kp H                           &kp E
-                &layer_kp_qt LAYER_ID_NAV BSPC  &layer_kp LAYER_ID_NUM T
+                &kp N                                &kp A
+                &kp H                                &kp E
+                &lt LAYER_ID_NAV BSPC                &lt LAYER_ID_NUM T
 
                 &layer_kp_qt_long LAYER_ID_MWS SPACE &kp O
-                &kp N                           &kp A
-                &kp H                           &kp E
-                &layer_kp_qt LAYER_ID_NAV BSPC  &layer_kp LAYER_ID_NUM T
+                &kp N                                &kp A
+                &kp H                                &kp E
+                &lt LAYER_ID_NAV BSPC                &lt LAYER_ID_NUM T
             >;
         };
 
@@ -76,8 +73,8 @@
                 &kp BSPC         &mo LAYER_ID_NUM
 
                 &kp SPACE        &kp MINUS
-                &kp N1         &kp N3
-                &kp N2         &kp N4
+                &kp N1           &kp N3
+                &kp N2           &kp N4
                 &kp BSPC         &mo LAYER_ID_NUM
             >;
         };
@@ -107,6 +104,20 @@
                 &mmv MOVE_UP     &mmv MOVE_LEFT
                 &mmv MOVE_DOWN   &mmv MOVE_RIGHT
                 &mkp MB2         &mkp MB1
+            >;
+        };
+
+        function {
+            bindings = <
+                &none            &kp PSCRN
+                &kp N1           &kp N3
+                &kp N2           &kp N4
+                &none            &none
+
+                &none            &kp PSCRN
+                &kp N1           &kp N3
+                &kp N2           &kp N4
+                &none            &none
             >;
         };
     };
