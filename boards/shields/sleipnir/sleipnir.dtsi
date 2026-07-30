@@ -57,6 +57,12 @@
         combo_colon_##SUFFIX   { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_BSPC KEY_O KEY_H KEY_E>; bindings = <&kp COLON>; }; \
         combo_lt_##SUFFIX      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_BSPC KEY_H KEY_A>; bindings = <&kp LT>; }; \
         combo_gt_##SUFFIX      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_BSPC KEY_N KEY_E>; bindings = <&kp GT>; }; \
+        combo_bslh_##SUFFIX    { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_BSPC KEY_SPACE KEY_A>; bindings = <&kp BSLH>; }; \
+        combo_pipe_##SUFFIX    { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_BSPC KEY_SPACE KEY_E>; bindings = <&kp PIPE>; }; \
+        combo_prcnt_##SUFFIX   { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_BSPC KEY_SPACE KEY_N>; bindings = <&kp PRCNT>; }; \
+        combo_at_##SUFFIX      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_BSPC KEY_SPACE KEY_H>; bindings = <&kp AT>; }; \
+        combo_caret_##SUFFIX   { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_BSPC KEY_SPACE KEY_N KEY_A>; bindings = <&kp CARET>; }; \
+        combo_tilde_##SUFFIX   { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_BSPC KEY_SPACE KEY_H KEY_E>; bindings = <&kp TILDE>; }; \
         combo_n5_##SUFFIX      { layers = <LAYER_ID_NUM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_O KEY_N>; bindings = <&kp N5>; }; \
         combo_n6_##SUFFIX      { layers = <LAYER_ID_NUM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_O KEY_H>; bindings = <&kp N6>; }; \
         combo_n7_##SUFFIX      { layers = <LAYER_ID_NUM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_O KEY_A>; bindings = <&kp N7>; }; \
