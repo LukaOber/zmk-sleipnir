@@ -110,9 +110,9 @@
         combo_m5_##SUFFIX      { layers = <LAYER_ID_MWS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_H KEY_E>; bindings = <&mkp MB5>; }; \
         combo_shift_##SUFFIX   { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_SPACE KEY_O>; bindings = <&sk LSHFT>; }; \
         combo_gui_##SUFFIX     { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_SPACE KEY_H>; bindings = <&sk LGUI>; }; \
-        combo_alt_##SUFFIX     { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_SPACE KEY_O KEY_A>; bindings = <&sk LALT>; }; \
+        combo_alt_##SUFFIX     { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_SPACE KEY_O KEY_N>; bindings = <&sk LALT>; }; \
         combo_ctrl_##SUFFIX    { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_SPACE KEY_O KEY_E>; bindings = <&sk LCTRL>; }; \
-        combo_insert_##SUFFIX  { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_SPACE KEY_O KEY_H>; bindings = <&kp INSERT>; }; \
+        combo_tmux_##SUFFIX    { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_SPACE KEY_O KEY_A>; bindings = <&kp LC(G)>; }; \
         combo_tab_##SUFFIX     { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_SPACE KEY_A>; bindings = <&kp TAB>; }; \
         combo_escape_##SUFFIX  { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_SPACE KEY_N>; bindings = <&kp ESCAPE>; }; \
         combo_enter_##SUFFIX   { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_SPACE KEY_E>; bindings = <&kp ENTER>; }
